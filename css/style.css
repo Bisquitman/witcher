@@ -1,8 +1,9 @@
-@import url("normalize.css");
-@import url("fonts.css");
-@import url("page.css");
-.container {
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-}
+@import "normalize.css";
+@import "fonts.css";
+@import "page.css";
+@import "header.css";
+@import "navigation.css";
+@import "present.css";
+@import "tabs.css";
+@import "card.css";
+@import "product.css";

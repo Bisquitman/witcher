@@ -1,0 +1,37 @@
+.tabs__btn {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tabs__btn:hover {
+  color: #ececec;
+}
+
+.tabs__btn_active {
+  border-color: white;
+}
+
+.tabs__btn_active:hover {
+  border-color: #ececec;
+}
+
+.tabs__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.tabs__control {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 21px;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 285px;
+  margin-left: auto;
+  margin-bottom: 12px;
+}

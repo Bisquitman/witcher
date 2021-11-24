@@ -20,6 +20,7 @@ body {
   color: white;
   background-image: linear-gradient(181.78deg, rgba(0, 0, 0, 0) 49.38%, rgba(0, 0, 0, 0.42) 98.49%),
     url('../img/background.jpg');
+  background-repeat: no-repeat;
 }
 
 img {
@@ -53,4 +54,10 @@ figure {
 
 iframe {
   border: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
 }
