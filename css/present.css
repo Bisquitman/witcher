@@ -20,7 +20,7 @@
 }
 
 .present__btn:active {
-  background-image: url('../img/button_active.png');
+  background-image: url('../img/button_hover.png');
 }
 
 .present__btn:focus {
