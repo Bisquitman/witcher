@@ -21,6 +21,8 @@ body {
   background-image: linear-gradient(181.78deg, rgba(0, 0, 0, 0) 49.38%, rgba(0, 0, 0, 0.42) 98.49%),
     url('../img/background.jpg');
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 img {
@@ -57,7 +59,75 @@ iframe {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1172px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 31px;
+}
+
+.page {
+  position: relative;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  right: 96px;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 115px);
+  z-index: -1;
+  background-image: url('../img/geralt-bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+@media (min-height: 900px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    max-height: 1250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+
+  .page::before {
+    right: 0;
+
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 0 39px;
+  }
+
+  .page::before {
+    top: 109px;
+    right: 0;
+    bottom: auto;
+    background-position: right top;
+    background-size: 448px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .page::before {
+    top: 49px;
+    background-size: 258px;
+  }
 }
