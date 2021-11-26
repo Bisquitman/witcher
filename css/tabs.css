@@ -20,6 +20,10 @@
   border-color: #ececec;
 }
 
+.tabs__list {
+  min-height: 256px;
+}
+
 .tabs__content {
   display: flex;
   justify-content: space-between;
